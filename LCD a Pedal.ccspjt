@@ -1,0 +1,20 @@
+[PROJECT]
+Target=LCD a Pedal.hex
+Processor_Text=PIC16F887
+CCSVersion=5.008
+Compiler=PCM
+[Target Data]
+FileList=LCD a Pedal.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[LCD a Pedal.c]
+Type=4
+[mru-list]
+1=LCD a Pedal.c
+[Opened Files]
+1=LCD a Pedal.c
+2=
+3=
+[Units]
+Count=1
+1=LCD a Pedal (main)
