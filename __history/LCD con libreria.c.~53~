@@ -1,0 +1,15 @@
+#include <16f887.h>                   //Nuestro pic
+#use delay (clock=8000000)            //Fosc=8Mhz                                  ////
+
+
+#INCLUDE <lcd.c>
+
+
+
+ 
+void main()
+{
+   set_tris_B(0);
+   lcd_init();                            //Inicializamos LCD
+   lcd_putc("Hola Mundo");                //"Hola Mundo"
+}

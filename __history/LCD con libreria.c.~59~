@@ -1,0 +1,23 @@
+#include <16f887.h>                   //Nuestro pic
+#use delay (clock=8000000)            //Fosc=8Mhz                                  ////
+
+#DEFINE LCD_ENABLE_PIN PIN_A0
+#define LCD_RS_PIN      PIN_A1
+#define LCD_RW_PIN      PIN_A2
+#define LCD_DATA4       PIN_A4
+#define LCD_DATA5       PIN_A5
+#define LCD_DATA6       PIN_A6
+#define LCD_DATA7       PIN_A7
+
+#INCLUDE <lcd.c>
+
+
+
+ 
+void main()
+{
+   set_tris_C(0);
+   OUTPUT_C(0);
+   lcd_init();                            //Inicializamos LCD
+   lcd_putc("Hola Mundo");                //"Hola Mundo"
+}

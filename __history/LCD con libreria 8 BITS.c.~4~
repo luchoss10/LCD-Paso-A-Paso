@@ -1,0 +1,16 @@
+#include <16f887.h>                   //Nuestro pic
+#use delay (clock=8000000)            //Fosc=8Mhz                                  ////
+
+#define LCD_DATA_PORT getenv("SFR:PORTB")
+#define LCD_ENABLE_PIN    PIN_D0
+#define LCD_RS_PIN               PIN_D1
+#define LCD_RW_PIN             PIN_D2
+#INCLUDE <lcd.c>
+
+void main()
+{
+   set_tris_B(0);
+   SET_TRIS_D(0);
+   lcd_init();                            //Inicializamos LCD
+   lcd_putc("Hola Mundo");                //"Hola Mundo"
+}

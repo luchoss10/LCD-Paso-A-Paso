@@ -13,10 +13,10 @@ Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   81    39 100  LCD a Pedal.c
+   86    39 100  LCD a Pedal.c
   758     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F887.h
 ----- -----
-  839    39 Total
+  844    39 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
@@ -29,14 +29,14 @@ Page ROM  %  RAM   Vol Diff  Functions:
 Program metrics:
     Functions               3
     Statements              39
-    Comments                134
+    Comments                139
     Volume (V)              983
     Difficulty (D)          4.0
     Effort to implement (E) 3965
     Time to implement (T)   4 minutes
     Est Delivered Bugs (B)  0
     Cyclomatic Complexity   1
-    Maintainability (MI)    59
+    Maintainability (MI)    54
 
  Segment     Used  Free
 -----------  ----  ----

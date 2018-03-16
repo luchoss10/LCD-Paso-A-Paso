@@ -1,9 +1,8 @@
-C L "MAIN" 0 9 1 "FUNCTION"
-C L "MAIN" 0 9 8 "FUNCTION"
-D G "__PCM__" 0 20 ""5.008""
-D G "__DEVICE__" 0 20 "887"
-D G "__DATE__" 0 20 ""14-mar.-18""
-D G "__TIME__" 0 20 ""12:04:43"" "Standard Header file for the PIC16F887 device ////////////////"
+D G "lcd_rw_tris" 2 129 "()  output_drive(LCD_RW_PIN)"
+D G "__PCM__" 2 137 ""5.008""
+D G "__DEVICE__" 2 137 "887"
+D G "__DATE__" 2 137 ""16-mar.-18""
+D G "__TIME__" 2 137 ""00:25:37"" "Standard Header file for the PIC16F887 device ////////////////"
 c L "set_tris_a" 1 5 15 "FUNCTION"
 v L "value" 1 30 "int8" `54 
 f B "set_tris_a" 1 30 "void(int8 value)" `53 
@@ -879,35 +878,34 @@ V L "low" 2 198 "int8" `633
 V L "high" 2 198 "int8" `634 
 F G "lcd_read_nibble" 2 244 "int8()" `631 
 V L "n" 2 260 "int8" `636 
-F G "lcd_send_nibble" 2 261 "void(int8 n)" `635 
+F G "lcd_send_nibble" 2 261 "void(int8 n,int8 n)" `635 
 V L "address" 2 278 "int8" `638 
 V L "n" 2 278 "int8" `639 
 F G "lcd_send_byte" 2 279 "void(int8 address,int8 n)" `637 
-F G "lcd_init" 2 304 "void()" `640 
+F G "lcd_init" 2 304 "void(int8 x,int8 y)" `640 
 V L "i" 2 305 "int8" `641 
 V L "x" 2 345 "int8" `643 
 V L "y" 2 345 "int8" `644 
-F G "lcd_gotoxy" 2 346 "void(int8 x,int8 y)" `642 
+F G "lcd_gotoxy" 2 346 "void(int8 x,int8 y,int8 c)" `642 
 V L "address" 2 347 "int8" `645 
 V L "c" 2 363 "int8" `647 
-F G "lcd_putc" 2 364 "void(int8 c)" `646 
+F G "lcd_putc" 2 364 "void(int8 c,int8 y)" `646 
 V L "x" 2 406 "int8" `649 
 V L "y" 2 406 "int8" `650 
-F G "lcd_getc" 2 407 "int8(int8 x,int8 y)" `648 
+F G "lcd_getc" 2 407 "int8(int8 x,int8 y,int8 which,*int8 ptr)" `648 
 V L "value" 2 408 "int8" `651 
 C L "lcd_getc" 2 2 1 "FUNCTION"
 C L "lcd_set_cgram_char" 2 2 5 "FUNCTION"
 V L "which" 2 424 "int8" `653 
 V L "ptr" 2 424 "*int8" `654 
-F G "lcd_set_cgram_char" 2 425 "void(int8 which,*int8 ptr)" `652 
+F G "lcd_set_cgram_char" 2 425 "void(int8 which,*int8 ptr,int8 on)" `652 
 V L "i" 2 426 "int8" `655 
 C L "lcd_set_cgram_char" 2 2 1 "FUNCTION"
 V L "on" 2 443 "int8" `657 
 F G "lcd_cursor_on" 2 444 "void(int8 on)" `656 
 C L "lcd_cursor_on" 2 2 1 "FUNCTION"
 C L "lcd_cursor_on" 2 2 1 "FUNCTION"
-F G "MAIN" 0 7 "void()" `658  "setup_oscillator(OSC_8MHZ|OSC_INTRC);  //Programamos oscilador interno del Pic a 8MHZ"
-C L "MAIN" 0 9 1 "FUNCTION"
+F G "MAIN" 0 7 "void()" `658 
 C L "MAIN" 0 9 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0

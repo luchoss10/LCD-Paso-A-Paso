@@ -1,0 +1,22 @@
+[PROJECT]
+Target=LCD con libreria 8 BITS.hex
+Processor_Text=PIC16F887
+CCSVersion=5.008
+Compiler=PCM
+[Target Data]
+FileList=LCD con libreria 8 BITS.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[LCD con libreria 8 BITS.c]
+Type=4
+[mru-list]
+1=LCD con libreria 8 BITS.c
+[Opened Files]
+1=LCD con libreria.c
+2=LCD a Pedal.c
+3=LCD a Pedal 8BITS.c
+4=LCD con libreria 8 BITS.c
+5=
+[Units]
+Count=1
+1=LCD con libreria 8 BITS (main)

@@ -1,0 +1,17 @@
+ÀÄLCD a Pedal 8BITS
+   ÀÄMAIN  0/68  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄpulso  0/15  Ram=0
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄpulso  0/15  Ram=0
+      ³  ÀÄ*
+      ÃÄescribe  0/17  Ram=0
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄescribe  0/17  Ram=0
+      ³  ÀÄ*
+      ÀÄescribe  0/17  Ram=0
+         ÀÄ*

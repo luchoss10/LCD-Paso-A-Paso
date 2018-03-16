@@ -51,6 +51,7 @@ ROM Allocation:
 0000AC  lcd_gotoxy
 0000BE  lcd_putc
 0000EA  @PSTRINGC7_646
+000122  lcd_cursor_on
 000137  @cinit1
 000137  MAIN
 000149  @cinit2
@@ -59,11 +60,11 @@ Project Directory:
     C:\Users\LuisMiguel\Documents\GitHub\LCD-Paso-A-Paso\
 
 Project Files:
-    LCD con libreria.c                                      [14-mar.-18 12:04  CRC=C71D0BA3]
+    LCD con libreria.c                                      [16-mar.-18 00:25  CRC=D8102B21]
     ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [03-jul.-13 14:28  CRC=9FD133B5]
     ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c   [23-ago.-12 09:01  CRC=D28E8746]
 
-Source signature=0C0B4DE4
+Source signature=1CFE6D62
 
 Units:
     LCD con libreria (main)
