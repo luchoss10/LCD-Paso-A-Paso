@@ -4,11 +4,11 @@
 void pulso(){
    //output_d(0x02);
    output_high(pin_D1);
-   delay_ms(500);   
+   delay_ms(300);   
    
    //output_d(0x00);
    output_low(pin_D1);
-   delay_ms(500);
+   delay_ms(300);
 }
 
 void escribe(){
@@ -44,37 +44,37 @@ void main(){
    //--------------------------------------------------------------------------
    //Terrmina inicializacion
    //Escribe U
-   output_c(0X05);
-   delay_ms(100);
-   
-   escribe();
-   
-   output_c(0X05);
-   delay_ms(100);
-   
-   escribe();
-   //--------------------------------------------------------------------------
-   //Escribe T
-   output_c(0X05);
-   delay_ms(100);
-   
-   escribe();
-   
-   output_c(0X04);
-   delay_ms(100);
-   
-   escribe();
-   
-   //--------------------------------------------------------------------------
-   //Escribe P
-   output_c(0X05);
-   delay_ms(100);
-   
-   escribe();
-   
-   output_c(0X00);
-   delay_ms(100);
-   
-   escribe();
+//!   output_c(0X05);
+//!   delay_ms(100);
+//!   
+//!   escribe();
+//!   
+//!   output_c(0X05);
+//!   delay_ms(100);
+//!   
+//!   escribe();
+//!   //--------------------------------------------------------------------------
+//!   //Escribe T
+//!   output_c(0X05);
+//!   delay_ms(100);
+//!   
+//!   escribe();
+//!   
+//!   output_c(0X04);
+//!   delay_ms(100);
+//!   
+//!   escribe();
+//!   
+//!   //--------------------------------------------------------------------------
+//!   //Escribe P
+//!   output_c(0X05);
+//!   delay_ms(100);
+//!   
+//!   escribe();
+//!   
+//!   output_c(0X00);
+//!   delay_ms(100);
+//!   
+//!   escribe();
 //!   //--------------------------------------------------------------------------
 }

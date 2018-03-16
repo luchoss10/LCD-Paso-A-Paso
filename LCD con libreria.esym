@@ -1,7 +1,9 @@
-D G "__PCM__" 0 0 ""5.008""
-D G "__DEVICE__" 0 0 ""
-D G "__DATE__" 0 0 ""14-mar.-18""
-D G "__TIME__" 0 0 ""16:32:51"" "Standard Header file for the PIC16F887 device ////////////////"
+C L "MAIN" 0 9 1 "FUNCTION"
+C L "MAIN" 0 9 8 "FUNCTION"
+D G "__PCM__" 0 20 ""5.008""
+D G "__DEVICE__" 0 20 "887"
+D G "__DATE__" 0 20 ""14-mar.-18""
+D G "__TIME__" 0 20 ""12:04:43"" "Standard Header file for the PIC16F887 device ////////////////"
 c L "set_tris_a" 1 5 15 "FUNCTION"
 v L "value" 1 30 "int8" `54 
 f B "set_tris_a" 1 30 "void(int8 value)" `53 
@@ -847,11 +849,64 @@ d G "INT_RB4" 1 752 "0x1100B08"
 d G "INT_RB5" 1 753 "0x1200B08"
 d G "INT_RB6" 1 754 "0x1400B08"
 d G "INT_RB7" 1 755 "0x1800B08"
-F G "pulso" 0 4 "void()" `618  "output_d(0x02);"
-C L "pulso" 0 9 1 "FUNCTION"
-F G "escribe" 0 14 "void()" `619 
-F G "MAIN" 0 22 "void()" `620 
-C L "MAIN" 0 9 2 "FUNCTION"
+D G "__LCD_C__" 2 76 ""
+C L "jump_to_irs" 2 2 2 "FUNCTION"
+C L "jump_to_irs" 2 2 1 "FUNCTION"
+C L "jump_to_irs" 2 2 1 "FUNCTION"
+C L "jump_to_irs" 2 2 1 "FUNCTION"
+C L "jump_to_irs" 2 2 1 "FUNCTION"
+C L "jump_to_irs" 2 2 1 "FUNCTION"
+C L "jump_to_irs" 2 2 2 "FUNCTION"
+T G "LCD_PIN_MAP" 2 90 "{int1 enable,int1 rs,int1 rw,int1 unused,int4 data}" `624  "this is to improve compatability with previous LCD drivers that accepted"
+D G "lcd_output_enable" 2 109 "(x) lcdlat.enable=x"
+D G "lcd_enable_tris" 2 110 "()   lcdtris.enable=0"
+D G "lcd_output_rs" 2 117 "(x) lcdlat.rs=x"
+D G "lcd_rs_tris" 2 118 "()   lcdtris.rs=0"
+D G "lcd_output_rw" 2 125 "(x) lcdlat.rw=x"
+D G "lcd_rw_tris" 2 126 "()   lcdtris.rw=0"
+D G "LCD_DATA_PORT" 2 149 "getenv("SFR:PORTD")" "portd"
+V G "lcd" 2 161 "LCD_PIN_MAP" `625 
+V G "lcdlat" 2 161 "LCD_PIN_MAP" `626 
+V G "lcdtris" 2 161 "LCD_PIN_MAP" `627 
+D G "LCD_TYPE" 2 179 "2" "0=5x7, 1=5x10, 2=2 lines"
+D G "LCD_LINE_TWO" 2 183 "0x40" "LCD RAM address for the second line"
+D G "LCD_LINE_LENGTH" 2 187 "20"
+V G "LCD_INIT_STRING" 2 190 "[4]" `628 
+C L "jump_to_irs" 2 2 2 "FUNCTION"
+F G "lcd_read_nibble" 2 194 "int8()" `631 
+F G "lcd_read_byte" 2 197 "int8()" `632 
+V L "low" 2 198 "int8" `633 
+V L "high" 2 198 "int8" `634 
+F G "lcd_read_nibble" 2 244 "int8()" `631 
+V L "n" 2 260 "int8" `636 
+F G "lcd_send_nibble" 2 261 "void(int8 n)" `635 
+V L "address" 2 278 "int8" `638 
+V L "n" 2 278 "int8" `639 
+F G "lcd_send_byte" 2 279 "void(int8 address,int8 n)" `637 
+F G "lcd_init" 2 304 "void()" `640 
+V L "i" 2 305 "int8" `641 
+V L "x" 2 345 "int8" `643 
+V L "y" 2 345 "int8" `644 
+F G "lcd_gotoxy" 2 346 "void(int8 x,int8 y)" `642 
+V L "address" 2 347 "int8" `645 
+V L "c" 2 363 "int8" `647 
+F G "lcd_putc" 2 364 "void(int8 c)" `646 
+V L "x" 2 406 "int8" `649 
+V L "y" 2 406 "int8" `650 
+F G "lcd_getc" 2 407 "int8(int8 x,int8 y)" `648 
+V L "value" 2 408 "int8" `651 
+C L "lcd_getc" 2 2 1 "FUNCTION"
+C L "lcd_set_cgram_char" 2 2 5 "FUNCTION"
+V L "which" 2 424 "int8" `653 
+V L "ptr" 2 424 "*int8" `654 
+F G "lcd_set_cgram_char" 2 425 "void(int8 which,*int8 ptr)" `652 
+V L "i" 2 426 "int8" `655 
+C L "lcd_set_cgram_char" 2 2 1 "FUNCTION"
+V L "on" 2 443 "int8" `657 
+F G "lcd_cursor_on" 2 444 "void(int8 on)" `656 
+C L "lcd_cursor_on" 2 2 1 "FUNCTION"
+C L "lcd_cursor_on" 2 2 1 "FUNCTION"
+F G "MAIN" 0 7 "void()" `658  "setup_oscillator(OSC_8MHZ|OSC_INTRC);  //Programamos oscilador interno del Pic a 8MHZ"
 C L "MAIN" 0 9 1 "FUNCTION"
 C L "MAIN" 0 9 1 "FUNCTION"
 F B "reset_cpu" 0 0

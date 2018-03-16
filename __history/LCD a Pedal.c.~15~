@@ -2,13 +2,11 @@
 #use delay (crystal=8000000)
 
 void pulso(){
-   //output_d(0x02);
-   output_high(pin_D1);
-   delay_ms(500);   
+   output_d(0x02);
+   delay_ms(100);   
    
-   //output_d(0x00);
-   output_low(pin_D1);
-   delay_ms(500);
+   output_d(0x00);
+   delay_ms(100);
 }
 
 void escribe(){
@@ -76,5 +74,5 @@ void main(){
    delay_ms(100);
    
    escribe();
-//!   //--------------------------------------------------------------------------
+   //--------------------------------------------------------------------------
 }

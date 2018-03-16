@@ -2,14 +2,14 @@
    ÀÄMAIN  0/136  Ram=0
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄpulso  0/16  Ram=0
+      ÃÄpulso  0/23  Ram=1
       ³  ÃÄ@delay_ms1  0/20  Ram=1
       ³  ÀÄ@delay_ms1  0/20  Ram=1
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄpulso  0/16  Ram=0
+      ÃÄpulso  0/23  Ram=1
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄpulso  0/16  Ram=0
+      ÃÄpulso  0/23  Ram=1
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
       ÃÄescribe  0/17  Ram=0

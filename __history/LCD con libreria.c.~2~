@@ -1,0 +1,10 @@
+#include <16F887.h>
+#include <lcd.c>
+#use delay (crystal=8000000)
+
+void main(){
+   
+
+
+}
+
