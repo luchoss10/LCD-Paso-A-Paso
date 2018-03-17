@@ -6,9 +6,7 @@
 01B     CCP_2
 01B     CCP_2_LOW
 01C     CCP_2_HIGH
-020     @TRIS_C
-021     pulso.@SCRATCH1
-022     @delay_ms1.P1
+021     @delay_ms1.P1
 077     @SCRATCH
 078     @SCRATCH
 078     _RETURN_
@@ -22,19 +20,19 @@
 ROM Allocation:
 000004  @delay_ms1
 000018  pulso
-00002F  escribe
-000040  MAIN
-000040  @cinit1
-000054  @cinit2
+000021  escribe
+00002C  MAIN
+00002C  @cinit1
+000041  @cinit2
 
 Project Directory:
     C:\Users\LuisMiguel\Documents\GitHub\LCD-Paso-A-Paso\
 
 Project Files:
-    LCD a Pedal.c                                           [15-mar.-18 23:06  CRC=3EABC5C3]
+    LCD a Pedal.c                                           [17-mar.-18 16:00  CRC=BD2594F7]
     ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F887.h [03-jul.-13 14:28  CRC=9FD133B5]
 
-Source signature=7E4E2D2D
+Source signature=FCC7FC61
 
 Units:
     LCD a Pedal (main)

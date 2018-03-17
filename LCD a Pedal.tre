@@ -1,32 +1,32 @@
 ÀÄLCD a Pedal
-   ÀÄMAIN  0/136  Ram=0
+   ÀÄMAIN  0/86  Ram=0
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄpulso  0/23  Ram=1
+      ÃÄpulso  0/9  Ram=0
       ³  ÃÄ@delay_ms1  0/20  Ram=1
       ³  ÀÄ@delay_ms1  0/20  Ram=1
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄpulso  0/23  Ram=1
+      ÃÄpulso  0/9  Ram=0
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄpulso  0/23  Ram=1
+      ÃÄpulso  0/9  Ram=0
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄescribe  0/17  Ram=0
+      ÃÄescribe  0/11  Ram=0
       ³  ÃÄ@delay_ms1  0/20  Ram=1
       ³  ÀÄ@delay_ms1  0/20  Ram=1
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄescribe  0/17  Ram=0
+      ÃÄescribe  0/11  Ram=0
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄescribe  0/17  Ram=0
+      ÃÄescribe  0/11  Ram=0
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄescribe  0/17  Ram=0
+      ÃÄescribe  0/11  Ram=0
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÃÄescribe  0/17  Ram=0
+      ÃÄescribe  0/11  Ram=0
       ³  ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
-      ÀÄescribe  0/17  Ram=0
+      ÀÄescribe  0/11  Ram=0
          ÀÄ*

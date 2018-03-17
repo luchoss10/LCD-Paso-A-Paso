@@ -1,5 +1,6 @@
 #include <16F887.h>
-#use delay (crystal=8000000)
+#FUSES NOWDT, NOPUT, INTRC_IO, NOPROTECT, NOBROWNOUT, NOWRT
+#use delay (internal=8M)
 
 //Funcion pulso al pin E de la LCD
 void pulso(){
@@ -20,6 +21,7 @@ void escribe(){
 }
   
 void main(){
+   setup_oscillator(OSC_8MHZ|OSC_INTRC);
    //Establecemos puertos como salidas
    set_tris_b(0x00);
    set_tris_d(0x00);

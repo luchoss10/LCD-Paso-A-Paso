@@ -1,5 +1,6 @@
 #include <16f887.h>                   
-#use delay (clock=8000000)            
+#FUSES NOWDT, NOPUT, INTRC_IO, NOPROTECT, NOBROWNOUT, NOWRT
+#use delay (internal=8M)           
 
 //Establecemos el modo de 8 bits de la LCD y escogemos el puerto que utilizaremos
 #define LCD_DATA_PORT getenv("SFR:PORTB")
@@ -12,6 +13,7 @@
 
 void main()
 {
+   setup_oscillator(OSC_8MHZ|OSC_INTRC);
    //Configuramos los puertos que usaremos como salidas
    set_tris_B(0);
    SET_TRIS_D(0);

@@ -1,7 +1,7 @@
-D G "__PCM__" 0 62 ""5.008""
-D G "__DEVICE__" 0 62 "887"
-D G "__DATE__" 0 62 ""16-mar.-18""
-D G "__TIME__" 0 62 ""00:59:10"" "Standard Header file for the PIC16F887 device ////////////////"
+D G "__PCM__" 0 65 ""5.008""
+D G "__DEVICE__" 0 65 "887"
+D G "__DATE__" 0 65 ""17-mar.-18""
+D G "__TIME__" 0 65 ""16:05:15"" "Standard Header file for the PIC16F887 device ////////////////"
 c L "set_tris_a" 1 5 15 "FUNCTION"
 v L "value" 1 30 "int8" `54 
 f B "set_tris_a" 1 30 "void(int8 value)" `53 
@@ -847,12 +847,17 @@ d G "INT_RB4" 1 752 "0x1100B08"
 d G "INT_RB5" 1 753 "0x1200B08"
 d G "INT_RB6" 1 754 "0x1400B08"
 d G "INT_RB7" 1 755 "0x1800B08"
-F G "pulso" 0 4 "void()" `618 
-F G "escribe" 0 12 "void()" `619 
-F G "MAIN" 0 20 "void()" `620 
-C L "MAIN" 0 39 2 "FUNCTION"
-C L "MAIN" 0 39 1 "FUNCTION"
-C L "MAIN" 0 39 2 "FUNCTION"
+C L "jump_to_irs" 0 5 1 "FUNCTION"
+F G "pulso" 0 6 "void()" `618 
+C L "escribe" 0 5 1 "FUNCTION"
+F G "escribe" 0 15 "void()" `619 
+F G "MAIN" 0 23 "void()" `620 
+C L "MAIN" 0 5 1 "FUNCTION"
+C L "MAIN" 0 5 1 "FUNCTION"
+C L "MAIN" 0 5 1 "FUNCTION"
+C L "MAIN" 0 5 2 "FUNCTION"
+C L "MAIN" 0 5 1 "FUNCTION"
+C L "MAIN" 0 5 2 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep_ulpwu" 1 0

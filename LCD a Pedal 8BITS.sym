@@ -23,16 +23,16 @@ ROM Allocation:
 000027  escribe
 000038  MAIN
 000038  @cinit1
-00004A  @cinit2
+00004D  @cinit2
 
 Project Directory:
     C:\Users\LuisMiguel\Documents\GitHub\LCD-Paso-A-Paso\
 
 Project Files:
-    LCD a Pedal 8BITS.c                                     [16-mar.-18 00:59  CRC=F9074E25]
+    LCD a Pedal 8BITS.c                                     [17-mar.-18 16:04  CRC=F6E8D76D]
     ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F887.h [03-jul.-13 14:28  CRC=9FD133B5]
 
-Source signature=38A9B58F
+Source signature=368B3ED7
 
 Units:
     LCD a Pedal 8BITS (main)

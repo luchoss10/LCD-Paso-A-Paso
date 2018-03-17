@@ -12,9 +12,11 @@ Type=4
 [mru-list]
 1=LCD a Pedal.c
 [Opened Files]
-1=LCD con libreria.c
+1=LCD a Pedal 8BITS.c
 2=LCD a Pedal.c
-3=
+3=LCD con libreria 8 BITS.c
+4=LCD con libreria.c
+5=
 [Units]
 Count=1
 1=LCD a Pedal (main)

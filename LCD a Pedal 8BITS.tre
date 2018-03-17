@@ -1,5 +1,5 @@
 ÀÄLCD a Pedal 8BITS
-   ÀÄMAIN  0/68  Ram=0
+   ÀÄMAIN  0/74  Ram=0
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@delay_ms1  0/20  Ram=1
       ÃÄpulso  0/15  Ram=0

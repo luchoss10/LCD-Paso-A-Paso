@@ -1,25 +1,32 @@
+
 #include <16F887.h>
-#use delay (crystal=8000000)
+#FUSES NOWDT, NOPUT, INTRC_IO, NOPROTECT, NOBROWNOUT, NOWRT
+//#use fuses iNTRC_IO
+#use delay(internal=8M)
+
+#use fast_io(d)
+#use fast_io(C)
 
 //Funcion pulso al pin E de la LCD
 void pulso(){
    output_high(pin_D1);
-   delay_ms(500);   
+   delay_ms(100);   
    
    output_low(pin_D1);
-   delay_ms(500);
+   delay_ms(100);
 }
 
 //funcion pulso con escritura incluido
 void escribe(){
    output_d(0x03);
-   delay_ms(100);   
+   delay_ms(50);   
    
    output_d(0x01);
-   delay_ms(100);   
+   delay_ms(50);   
 }
   
 void main(){
+   setup_oscillator(OSC_8MHZ|OSC_INTRC);
    //Establecemos puertos como salidas
    set_tris_c(0x00);
    set_tris_d(0x00);
@@ -83,5 +90,6 @@ void main(){
    delay_ms(100);
    
    escribe();
-//!   //--------------------------------------------------------------------------
+//!   //-----------------------------------------------------------------------
+   
 }

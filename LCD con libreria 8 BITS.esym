@@ -1,8 +1,8 @@
-C L "MAIN" 0 14 1 "FUNCTION"
-D G "__PCM__" 0 18 ""5.008""
-D G "__DEVICE__" 0 18 "887"
-D G "__DATE__" 0 18 ""16-mar.-18""
-D G "__TIME__" 0 18 ""01:15:30"" "Standard Header file for the PIC16F887 device ////////////////"
+C L "MAIN" 0 10 1 "FUNCTION"
+D G "__PCM__" 0 15 ""5.008""
+D G "__DEVICE__" 0 15 "887"
+D G "__DATE__" 0 15 ""17-mar.-18""
+D G "__TIME__" 0 15 ""16:05:30"" "Standard Header file for the PIC16F887 device ////////////////"
 c L "set_tris_a" 1 5 15 "FUNCTION"
 v L "value" 1 30 "int8" `54 
 f B "set_tris_a" 1 30 "void(int8 value)" `53 
@@ -848,10 +848,11 @@ d G "INT_RB4" 1 752 "0x1100B08"
 d G "INT_RB5" 1 753 "0x1200B08"
 d G "INT_RB6" 1 754 "0x1400B08"
 d G "INT_RB7" 1 755 "0x1800B08"
-D G "LCD_DATA_PORT" 0 4 "getenv("SFR:PORTB")"
-D G "LCD_ENABLE_PIN" 0 5 "PIN_D0"
-D G "LCD_RS_PIN" 0 6 "PIN_D1"
-D G "LCD_RW_PIN" 0 7 "PIN_D2"
+D G "LCD_DATA_PORT" 0 6 "getenv("SFR:PORTB")"
+D G "LCD_ENABLE_PIN" 0 8 "PIN_D0"
+D G "LCD_RS_PIN" 0 9 "PIN_D1"
+D G "LCD_RW_PIN" 0 10 "PIN_D2"
+C L "jump_to_irs" 0 5 1 "FUNCTION"
 D G "__LCD_C__" 2 76 ""
 C L "jump_to_irs" 2 2 2 "FUNCTION"
 C L "jump_to_irs" 2 2 1 "FUNCTION"
@@ -908,8 +909,9 @@ V L "on" 2 443 "int8" `657
 F G "lcd_cursor_on" 2 444 "void(int8 on)" `656 
 C L "lcd_cursor_on" 2 2 1 "FUNCTION"
 C L "lcd_cursor_on" 2 2 1 "FUNCTION"
-F G "MAIN" 0 11 "void()" `658 
-C L "MAIN" 0 14 1 "FUNCTION"
+F G "MAIN" 0 15 "void()" `658 
+C L "MAIN" 0 17 1 "FUNCTION"
+C L "MAIN" 0 17 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep_ulpwu" 1 0

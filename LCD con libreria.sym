@@ -42,29 +42,28 @@ ROM Allocation:
 000004  LCD_INIT_STRING.call
 000008  LCD_INIT_STRING.data
 00000C  @const661.call
-000012  @delay_ms1
-000026  lcd_send_nibble
-000033  lcd_read_nibble
-000039  lcd_send_byte
-00003F  lcd_read_byte
-000079  lcd_init
-0000AC  lcd_gotoxy
-0000BE  lcd_putc
-0000EA  @PSTRINGC7_646
-000122  lcd_cursor_on
-000137  @cinit1
-000137  MAIN
-000149  @cinit2
+000014  @delay_ms1
+000028  lcd_send_nibble
+000035  lcd_read_nibble
+00003B  lcd_send_byte
+000041  lcd_read_byte
+00007B  lcd_init
+0000AE  lcd_gotoxy
+0000C0  lcd_putc
+0000EC  @PSTRINGC7_646
+000139  @cinit1
+000139  MAIN
+00014E  @cinit2
 
 Project Directory:
     C:\Users\LuisMiguel\Documents\GitHub\LCD-Paso-A-Paso\
 
 Project Files:
-    LCD con libreria.c                                      [16-mar.-18 00:25  CRC=D8102B21]
+    LCD con libreria.c                                      [17-mar.-18 16:04  CRC=9724311F]
     ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [03-jul.-13 14:28  CRC=9FD133B5]
     ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c   [23-ago.-12 09:01  CRC=D28E8746]
 
-Source signature=1CFE6D62
+Source signature=DC127360
 
 Units:
     LCD con libreria (main)
