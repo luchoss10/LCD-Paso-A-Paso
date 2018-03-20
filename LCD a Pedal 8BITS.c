@@ -41,7 +41,7 @@ void main(){
    
    pulso();
    //--------------------------------------------------------------------------
-   //Terrmina inicialización
+   //Terrmina inicializaciÃ³n
    //Escribe U
    
    output_b(0X55);
@@ -55,7 +55,7 @@ void main(){
    escribe();
    //--------------------------------------------------------------------------
    //Escribe P
-   //output_c(0X05);
+
    output_b(0X50);
    
    escribe();
